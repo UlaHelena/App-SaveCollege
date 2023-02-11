@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    var alunos = [
+      {
+        Name: "Joana Cordeiro",
+        Altura: 1.65,
+        Idade: 21,
+        Sexo: "Feminino",
+        Sala: "Sala 1",
+        Matemática: 8,
+      },
+      {
+        Name: "Franklin Cascais",
+        Altura: 1.74,
+        Idade: 25,
+        Sexo: "Masculino",
+        Sala: "Sala 2",
+        Matemática: 7,
+      },
+      {
+        Name: "Mônica da Rosa",
+        Altura: 1.59,
+        Idade: 20,
+        Sexo: "Feminino",
+        Sala: "Sala 3",
+        Matemática: 9,
+      },
+      {
+        Name: "Joaquim Lima",
+        Altura: 1.82,
+        Idade: 23,
+        Sexo: "Masculino",
+        Sala: "Sala 4",
+        Matemática: 9,
+      },
+      {
+        Name: "Caroline Azevedo",
+        Altura: 1.7,
+        Idade: 19,
+        Sexo: "Feminino",
+        Sala: "Sala 5",
+        Matemática: 7,
+      },
+    ];
+
+    console.log(alunos[0]);
+    console.log(alunos[1]);
+    console.log(alunos[2]);
+    console.log(alunos[2]);
+    console.log(alunos[4]);
+
+    var media =
+      (alunos[0].Matemática +
+        alunos[1].Matemática +
+        alunos[2].Matemática +
+        alunos[3].Matemática +
+        alunos[4].Matemática) /
+      5;
+    console.log("Media da turnma é " + media);
+
+    function aprovação(aluno, nota) {
+      if (nota > 8) {
+        return `O ${aluno} passou`;
+      } else {
+        return `O ${aluno} não passou`;
+      }
+    }
+    console.log(aprovação(alunos[0].Name, alunos[0].Matemática));
+    console.log(aprovação(alunos[1].Name, alunos[1].Matemática));
+    console.log(aprovação(alunos[2].Name, alunos[2].Matemática));
+    console.log(aprovação(alunos[3].Name, alunos[3].Matemática));
+    console.log(aprovação(alunos[4].Name, alunos[4].Matemática));
+  </script>
+</html>
